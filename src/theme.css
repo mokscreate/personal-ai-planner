@@ -1,0 +1,338 @@
+/* Neutral workspace: color identifies interaction, not every surface. */
+:root {
+  font-family: "Segoe UI", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+  font-size: 14px;
+  color: #292929;
+  background: #fff;
+  --green: #486dff;
+  --muted: #888;
+  --line: #eeeeee;
+}
+body,
+.app,
+.workspace,
+.calendar-main,
+.calendar-toolbar,
+.day-head,
+.assistant,
+.sidebar,
+.sql-overview,
+.learning-page,
+.sql-header {
+  background: #fff;
+  color: #292929;
+}
+.rail {
+  background: #f8f8f8;
+  border-right: 1px solid #eee;
+}
+.rail button {
+  color: #999;
+}
+.rail .rail-active {
+  background: #eef2ff;
+  color: #486dff;
+}
+.brand {
+  background: #486dff;
+  color: #fff;
+}
+.avatar {
+  background: #eee;
+  color: #777;
+}
+.primary,
+.send {
+  background: #486dff !important;
+  color: #fff !important;
+}
+.primary:hover,
+.send:hover {
+  background: #3a5de8 !important;
+}
+button:hover {
+  background: #f3f3f3;
+}
+input,
+textarea,
+select {
+  color: #303030;
+  border-color: #dedede;
+  background: #fff;
+  font-size: 14px;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #999;
+}
+h1,
+h2,
+h3,
+h4,
+.date-title,
+.section-heading {
+  color: #222;
+  letter-spacing: 0;
+}
+.date-title h2 {
+  font-size: 23px;
+  font-weight: 650;
+}
+.calendar-controls button,
+.calendar-controls input,
+.calendar-scale button {
+  color: #555;
+  border-color: #ddd;
+}
+.calendar-controls .calendar-add {
+  background: #486dff;
+  color: #fff;
+}
+.day span,
+.day.current span {
+  color: #888;
+  font-size: 12px;
+}
+.day b {
+  font-size: 19px;
+  font-weight: 400;
+  color: #252525;
+}
+.day.current b {
+  background: #486dff;
+  color: white;
+}
+.day-column.today-column {
+  background: #fafafa;
+}
+.hour-cell {
+  border-top-color: #f1f1f1;
+}
+.day-column {
+  border-left-color: #f1f1f1;
+}
+.time-labels span {
+  font-size: 11px;
+  color: #929292;
+  line-height: 13px;
+}
+.timezone,
+.calendar-footer,
+.view-label,
+.sidebar-foot,
+.task-meta,
+.section-mini,
+.muted {
+  color: #888;
+}
+.event-block.highlight-yellow { background: #ffe08a !important; color: #614600 !important; }
+.event-block.task,
+.event-block.event {
+  background: #92a8fa;
+  border: 0;
+  color: #293b70;
+  border-radius: 5px;
+}
+.event-block.task {
+  background: #92a8fa;
+}
+.event-block.awaiting {
+  border-left: 3px solid #d0ac46;
+}
+.event-block.unfinished {
+  background: #e5e9f5;
+  color: #666;
+  border-left: 3px solid #c4ae6b;
+  opacity: 1;
+}
+.event-block.done {
+  background: #eeeeee;
+  color: #888;
+  border: 0;
+  opacity: 0.8;
+}
+.block-drag {
+  padding: 6px 7px;
+}
+.block-drag strong {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-right: 12px;
+}
+.block-drag small {
+  font-size: 11px;
+  color: #52669b;
+  opacity: 1;
+}
+.block-open {
+  color: #4d6094;
+}
+.legend-task {
+  background: #92a8fa;
+}
+.legend-event {
+  background: #92a8fa;
+}
+.assistant > .section-heading > span svg {
+  color: #888;
+}
+.assistant-scroll {
+  background: #fff;
+}
+.message {
+  color: #404040;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.message-label,
+.eyebrow,
+.overview-kicker,
+.learning-kicker {
+  color: #888;
+  letter-spacing: 0.5px;
+}
+.composer {
+  background: #fff;
+  border-color: #ddd;
+  box-shadow: none;
+}
+.composer textarea {
+  font-size: 14px;
+  color: #333;
+}
+.composer-tools,
+.composer-tools button,
+.privacy-line {
+  color: #999;
+}
+.ai-intro p,
+.ai-intro h3,
+.intro-pills span {
+  color: #777;
+}
+.sparkle-square {
+  background: #f4f4f4;
+  color: #888;
+}
+.search,
+.tabs,
+.project-select {
+  background: #f7f7f7;
+}
+.tabs button,
+.sql-page-tabs button {
+  color: #777;
+}
+.tabs .selected,
+.sql-page-tabs .active,
+.english-module.active {
+  background: #eef2ff;
+  color: #486dff;
+}
+.task-name,
+.field,
+.editor-heading h3 {
+  color: #333;
+}
+.follow-card,
+.english-notice {
+  background: #fffbec;
+  border: 1px solid #f1e5bc;
+  color: #6b5e36;
+}
+.sql-plan,
+.english-card,
+.chapter-detail {
+  background: #fff;
+  border-color: #e8e8e8;
+  box-shadow: none;
+  border-radius: 9px;
+}
+.overview-scroll {
+  background: #fff;
+}
+.overview-intro h2 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #222;
+}
+.overview-intro p,
+.sql-plan p,
+.english-card p,
+.english-workspace small,
+.chapter-detail p {
+  color: #777;
+  font-size: 13px;
+}
+.overview-progress b {
+  color: #486dff;
+}
+.overview-progress i {
+  background: #486dff;
+}
+.sql-engine {
+  color: #888;
+}
+.sql-page-tabs button {
+  font-size: 13px;
+}
+.english-task small,
+.chapter-meta {
+  color: #888;
+}
+.early-events {
+  background: #f7f7f7;
+  color: #777;
+}
+@media (max-width: 600px) {
+  .block-drag strong {
+    font-size: 12px;
+  }
+  .date-title h2 {
+    font-size: 19px;
+  }
+}
+
+.compact-hours .block-drag strong {
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.message.user {
+  background: #f5f5f5;
+  color: #404040;
+}
+.early-strip {
+  background: #f8f8f8;
+  color: #777;
+}
+.canvas-deadlines {display:grid;flex-shrink:0;border-bottom:1px solid #eee;background:#fff;font-size:11px;max-height:130px;overflow:auto;}
+.canvas-deadlines>span{padding:9px 5px;color:#777;}
+.canvas-deadlines>div{min-width:0;border-left:1px solid #eee;padding:3px;}
+.canvas-deadlines a{display:block;padding:5px;background:#eef2ff;color:#344573;border-radius:4px;margin-bottom:3px;text-decoration:none;}
+.canvas-deadlines a span{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.canvas-assignment-title{display:block;text-align:left;font-size:16px!important;font-weight:600!important;color:#354fa8!important;}
+.canvas-original{display:block;color:#888;margin:5px 0;}
+.canvas-course{margin-top:18px;}
+.canvas-detail{border:1px solid #b8c7f4!important;margin-bottom:20px;}
+.canvas-detail p,.canvas-course p{line-height:1.8;}
+
+.canvas-deadlines{grid-template-columns:55px repeat(var(--calendar-days,7),minmax(0,1fr));padding-right:8px;}
+.canvas-deadlines b{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+@media(max-width:600px){.canvas-deadlines{grid-template-columns:42px repeat(var(--calendar-days,3),minmax(0,1fr));}}
+
+.event-block.canvas-deadline-block{background:#ffe08a;color:#614600;border:0;padding:4px;text-decoration:none;z-index:4;box-sizing:border-box;}
+.canvas-deadline-block strong,.canvas-deadline-block span{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;font-weight:400;}
+
+.canvas-item-detail{padding:20px;overflow-wrap:anywhere;}.canvas-item-detail h2{font-size:18px;line-height:1.5;}.canvas-item-detail h3{margin-top:20px;font-size:14px;}.event-block.canvas-deadline-block{text-align:left;cursor:pointer;}
+
+.canvas-course-tabs{position:sticky;top:0;z-index:8;display:flex;gap:6px;overflow-x:auto;padding:12px 0;background:white;border-bottom:1px solid #eee;}
+.canvas-course-tabs button{flex-shrink:0;padding:9px 13px;font-weight:600;}
+.canvas-course-tabs .active,.canvas-section-tabs .active{background:#edf1ff;color:#3757bb;border-color:#c8d3fa;}
+.canvas-section-tabs{display:flex;gap:8px;margin:16px 0;}
+.canvas-materials details{padding:14px;border-bottom:1px solid #eee;}.canvas-materials li{margin:12px 0;line-height:1.5;}.canvas-materials a{color:#3455b3;}
+
+.english-workspace .canvas-history{display:flex;align-items:center;gap:8px;}.english-workspace .canvas-history input{width:auto;margin:0;}
+
+.pending-selection{pointer-events:none;background:rgba(76,112,255,.2);border:1px solid #4d70ff;color:#294fac;z-index:5;}.pending-selection small{display:block;}

@@ -1,0 +1,14 @@
+node_modules
+dist
+.git
+.codex
+runtime
+data
+backups
+logs
+.env*
+*.sqlite*
+*.db*
+*.log
+secrets
+credentials

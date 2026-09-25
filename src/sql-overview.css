@@ -1,0 +1,524 @@
+.sql-overview {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  background: #f8f9fb;
+}
+.sql-page-tabs {
+  display: flex;
+  gap: 5px;
+  margin-left: 15px;
+}
+.sql-page-tabs button {
+  font-size: 12px;
+  color: #7285aa;
+}
+.sql-page-tabs .active {
+  background: #e4e8f0;
+  color: #38455f;
+}
+.overview-scroll {
+  overflow: auto;
+  padding: 28px 32px 50px;
+}
+.overview-intro {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.overview-kicker {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #7386ab;
+}
+.overview-intro h2 {
+  font-size: 25px;
+  font-weight: 550;
+  margin: 12px 0;
+}
+.overview-intro p {
+  font-size: 12px;
+  line-height: 1.9;
+  color: #6a7ea6;
+  max-width: 720px;
+}
+.overview-progress {
+  min-width: 160px;
+}
+.overview-progress b {
+  font-size: 34px;
+  color: #38455e;
+  font-weight: 500;
+}
+.overview-progress b small {
+  font-size: 15px;
+}
+.overview-progress > span {
+  display: block;
+  font-size: 10px;
+  color: #7789ae;
+  margin-top: 7px;
+}
+.overview-progress > div {
+  height: 4px;
+  background: #dfe3eb;
+  margin-top: 12px;
+}
+.overview-progress i {
+  height: 100%;
+  display: block;
+  background: #6075a0;
+}
+.sql-plan {
+  background: white;
+  border: 1px solid #dfe3eb;
+  border-radius: 12px;
+  padding: 22px 25px;
+}
+.sql-plan-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.sql-plan h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 550;
+}
+.sql-plan-heading p {
+  font-size: 11px;
+  color: #6f82a9;
+  line-height: 1.8;
+  margin-top: 8px;
+}
+.sql-plan-heading > label {
+  font-size: 10px;
+  color: #6f82a9;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+.sql-plan-heading input {
+  font-size: 11px;
+  padding: 6px;
+}
+.plan-sliders {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin: 25px 0 20px;
+}
+.plan-sliders > label > span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #697da5;
+}
+.plan-sliders b {
+  font-size: 18px;
+  font-weight: 500;
+  color: #3b4863;
+}
+.plan-sliders b small {
+  font-size: 11px;
+  color: #7e8fb2;
+}
+.plan-sliders input {
+  width: 100%;
+  accent-color: #586c93;
+  padding: 0;
+  margin: 16px 0;
+  cursor: pointer;
+}
+.plan-presets {
+  display: flex;
+  gap: 5px;
+}
+.plan-presets button {
+  font-size: 10px;
+  background: #eff1f6;
+  padding: 5px 9px;
+  color: #667ba4;
+}
+.plan-sliders > label > small {
+  font-size: 10px;
+  color: #8192b3;
+}
+.plan-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--line);
+  padding-top: 17px;
+  gap: 20px;
+  font-size: 12px;
+  color: #6277a1;
+}
+.plan-summary small {
+  display: block;
+  font-size: 10px;
+  color: #8192b4;
+  margin-top: 7px;
+}
+.plan-summary button {
+  font-size: 12px;
+  white-space: nowrap;
+}
+.plan-footnote {
+  font-size: 10px;
+  color: #8091b3;
+  margin-top: 13px;
+}
+.curriculum-layout {
+  display: grid;
+  grid-template-columns: minmax(350px, 1.1fr) minmax(320px, 1fr);
+  gap: 25px;
+  margin-top: 28px;
+  align-items: start;
+}
+.curriculum-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 15px;
+}
+.curriculum-title h3 {
+  font-size: 16px;
+  font-weight: 550;
+}
+.curriculum-title span {
+  font-size: 11px;
+  color: #8090b3;
+}
+.chapter-row {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  width: 100%;
+  padding: 20px 16px;
+  gap: 14px;
+  border: 1px solid var(--line);
+  background: white;
+  margin-bottom: 9px;
+  border-radius: 9px;
+}
+.chapter-row.selected {
+  background: #e8ecf3;
+  border-color: #c0c9dc;
+}
+.chapter-number {
+  font-size: 13px;
+  color: #667ba3;
+  width: 23px;
+  flex-shrink: 0;
+}
+.chapter-row > span:nth-child(2) {
+  flex: 1;
+  min-width: 0;
+}
+.chapter-row strong {
+  font-size: 13px;
+  font-weight: 550;
+  display: block;
+}
+.chapter-row small {
+  display: block;
+  font-size: 10px;
+  line-height: 1.8;
+  color: #7587ac;
+  margin-top: 7px;
+}
+.chapter-row em {
+  display: block;
+  font-size: 10px;
+  color: #657aa3;
+  font-style: normal;
+  margin-top: 8px;
+}
+.chapter-status {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 10px;
+  color: #6f82a9;
+  white-space: nowrap;
+}
+.chapter-detail {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 25px;
+}
+.chapter-detail h3 {
+  font-size: 20px;
+  font-weight: 550;
+  margin: 12px 0;
+}
+.chapter-detail h4 {
+  font-size: 13px;
+  font-weight: 550;
+  margin: 22px 0 9px;
+}
+.chapter-detail p {
+  font-size: 12px;
+  line-height: 1.9;
+  color: #5d729c;
+}
+.chapter-detail .chapter-goal {
+  background: #ebeef5;
+  padding: 12px;
+  border-radius: 7px;
+  font-size: 11px;
+}
+.chapter-detail pre {
+  font:
+    11px/1.8 Consolas,
+    monospace;
+  white-space: pre-wrap;
+  background: #f2f4f8;
+  padding: 13px;
+  border-radius: 7px;
+  color: #485877;
+  margin-top: 14px;
+}
+.chapter-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  font-size: 11px;
+  color: #657aa3;
+  line-height: 1.8;
+  margin-top: 15px;
+}
+.chapter-check input {
+  flex-shrink: 0;
+}
+.chapter-detail a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: #485878;
+  margin: 10px 15px 5px 0;
+}
+.chapter-detail > small {
+  display: block;
+  font-size: 10px;
+  line-height: 1.8;
+  color: #8192b4;
+  margin-top: 9px;
+}
+.chapter-detail textarea {
+  width: 100%;
+  font-size: 11px;
+  min-height: 90px;
+  margin-top: 10px;
+  line-height: 1.8;
+}
+.chapter-complete {
+  width: 100%;
+  margin-top: 15px;
+  font-size: 12px;
+}
+.chapter-optional {
+  font-size: 11px;
+  color: #5b6f98;
+  margin-top: 10px;
+}
+.chapter-pass {
+  margin-top: 10px;
+  color: #4c5f85 !important;
+}
+.sql-tools {
+  margin-top: 28px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 25px;
+}
+.sql-tools > h3 {
+  font-size: 16px;
+  font-weight: 550;
+}
+.sql-tools > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  margin-top: 20px;
+}
+.sql-tools h4 {
+  font-size: 13px;
+  font-weight: 550;
+  margin-bottom: 10px;
+}
+.sql-tools p {
+  font-size: 11px;
+  line-height: 1.9;
+  color: #7083a9;
+}
+.sql-tools a {
+  display: inline-block;
+  font-size: 11px;
+  color: #4b5b7c;
+  margin: 12px 12px 0 0;
+}
+.sql-tools .tools-note {
+  font-size: 10px;
+  margin-top: 20px;
+  color: #8797b7;
+}
+.overview-notice {
+  font-size: 12px;
+  color: #526488;
+  margin: 16px 0;
+}
+.download-practice {
+  padding: 8px 11px;
+  border: 1px solid #d9dee9;
+  border-radius: 6px;
+  text-decoration: none;
+}
+@media (max-width: 1100px) {
+  .overview-scroll {
+    padding: 20px;
+  }
+  .curriculum-layout {
+    grid-template-columns: 1fr;
+  }
+  .overview-progress {
+    min-width: 125px;
+  }
+  .sql-plan-heading {
+    flex-direction: column;
+  }
+  .plan-sliders {
+    gap: 25px;
+  }
+  .chapter-detail {
+    max-width: none;
+  }
+  .sql-tools > div {
+    grid-template-columns: 1fr;
+  }
+  .sql-page-tabs {
+    margin-left: 0;
+  }
+  .overview-intro h2 {
+    font-size: 22px;
+  }
+}
+.daily-plan-preview {
+  margin-top: 18px;
+  padding: 16px;
+  border: 1px solid #cbd0da;
+  border-radius: 10px;
+  background: #f8f9fb;
+}
+.study-task-list {
+  max-height: 300px;
+  overflow-y: auto;
+  margin: 12px 0;
+}
+.study-task-row {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 12px 4px;
+  border-bottom: 1px solid #e2e4e9;
+  font-size: 13px;
+}
+.study-task-row strong {
+  color: #29395a;
+}
+.study-task-row small {
+  white-space: pre-wrap;
+  line-height: 1.6;
+}
+.daily-plan-preview > button {
+  margin: 8px 12px 0 0;
+}
+.chapter-schedule {
+  max-height: 340px;
+}
+@media (max-width: 600px) {
+  .overview-scroll {
+    padding: 16px 12px 30px;
+  }
+  .overview-intro {
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .overview-intro h2 {
+    font-size: 20px;
+  }
+  .overview-kicker {
+    display: none;
+  }
+  .overview-progress {
+    min-width: 60px;
+    width: 60px;
+  }
+  .overview-progress b {
+    font-size: 24px;
+  }
+  .sql-plan {
+    padding: 16px 12px;
+  }
+  .plan-sliders {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .plan-summary {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .sql-plan-heading > label {
+    flex-wrap: wrap;
+  }
+  .chapter-row {
+    padding: 12px 4px;
+    gap: 8px;
+  }
+  .chapter-number {
+    min-width: 24px;
+  }
+  .chapter-row small {
+    overflow-wrap: anywhere;
+  }
+  .chapter-status {
+    min-width: 38px;
+    font-size: 10px;
+  }
+  .chapter-detail {
+    padding: 18px 12px;
+    scroll-margin-top: 10px;
+  }
+  .chapter-detail pre {
+    overflow: auto;
+    max-width: 100%;
+  }
+  .curriculum-layout {
+    gap: 18px;
+    min-width: 0;
+  }
+  .curriculum-layout > section {
+    min-width: 0;
+  }
+  .daily-plan-preview {
+    padding: 12px;
+  }
+  .sql-tools {
+    padding: 18px 12px;
+  }
+  .sql-plan input[type="range"] {
+    min-height: 36px;
+  }
+}
